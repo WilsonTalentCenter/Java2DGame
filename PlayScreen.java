@@ -32,12 +32,15 @@ public class PlayScreen extends Screen{
 
     @Override
     public void update() {
+
         player.update(inputManager);
     }
 
     @Override
     public void draw(Graphics g) {
         player.draw(g);
+        //draw words example:
+        g.drawString("My score: ", 10, 20);
     }
 
     @Override

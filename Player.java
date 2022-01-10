@@ -21,6 +21,7 @@ public class Player {
 
     }
     public void update(InputManager inputManager){
+        //region movement
         int ySpeed = 0;
         if(inputManager.down.isPressed()){
             ySpeed =2;
@@ -35,9 +36,15 @@ public class Player {
         }
         hitBox.x += xSpeed;
         hitBox.y += ySpeed;
+        //endregion
+        //region collision
+
+        //endregion
 
     }
     public void draw(Graphics g){
+        //draw sprite example
         g.drawImage(sprite, hitBox.x,hitBox.y,hitBox.width,hitBox.height,null);
+
     }
 }

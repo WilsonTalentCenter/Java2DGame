@@ -88,15 +88,12 @@ public class ScreenManager extends JPanel implements KeyListener, ActionListener
 
     @Override
     public void keyTyped(KeyEvent e) {
-        System.out.println("keyTyped");
     }
 
     public void keyPressed(KeyEvent e){
-        System.out.println("keyPressed");
         currentScreen.keyPressed(e);
     }
     public void keyReleased(KeyEvent e){
-        System.out.println("keyReleased");
         currentScreen.keyReleased(e);
     }
 
