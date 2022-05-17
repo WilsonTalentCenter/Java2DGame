@@ -45,4 +45,10 @@ public class InputManager {
             right.released();
         }
     }
+    public void update(){
+        up.update();
+        left.update();
+        right.update();
+        down.update();
+    }
 }
